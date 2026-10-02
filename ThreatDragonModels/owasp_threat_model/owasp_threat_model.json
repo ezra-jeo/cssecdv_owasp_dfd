@@ -4,14 +4,24 @@
   "released_at": "",
   "summary": {
     "title": "owasp_threat_model",
-    "owner": "",
-    "description": "",
+    "owner": "Ezra Del Rosario",
+    "description": "Recreated and corrected data flow diagram for Activity 1",
     "id": 0
   },
   "detail": {
     "contributors": [],
-    "diagrams": [],
-    "diagramTop": 1,
+    "diagrams": [
+      {
+        "id": 1,
+        "title": "New STRIDE diagram",
+        "diagramType": "STRIDE",
+        "placeholder": "New STRIDE diagram description",
+        "thumbnail": "./public/content/images/thumbnail.stride.jpg",
+        "version": "2.6.2",
+        "cells": []
+      }
+    ],
+    "diagramTop": 2,
     "reviewer": "",
     "threatTop": 0
   }
