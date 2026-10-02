@@ -1140,7 +1140,7 @@
             "data": {
               "type": "tm.Actor",
               "name": "Authentication\n/Authorization\nProvider",
-              "description": "",
+              "description": "Provider treated as an external entity. It is assumed to be separate from the system.",
               "isTrustBoundary": false,
               "outOfScope": false,
               "reasonOutOfScope": "",
@@ -1257,7 +1257,7 @@
             "data": {
               "type": "tm.Process",
               "name": "LDAP",
-              "description": "Lightweight Directory Access Protocol",
+              "description": "Lightweight Directory Access Protocol. Treated as a process given its role in the reference diagram.",
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
