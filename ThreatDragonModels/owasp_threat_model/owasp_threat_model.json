@@ -13,7 +13,7 @@
     "diagrams": [
       {
         "id": 1,
-        "title": "New STRIDE diagram",
+        "title": "Correct Data Flow Diagram",
         "diagramType": "STRIDE",
         "placeholder": "New STRIDE diagram description",
         "thumbnail": "./public/content/images/thumbnail.stride.jpg",
@@ -1269,7 +1269,8 @@
               "threats": []
             }
           }
-        ]
+        ],
+        "description": "This data flow diagram recreates and corrects the reference diagram from Activity 2 in CSSECDV. Note that threats are not included as per the instructions."
       }
     ],
     "diagramTop": 2,
