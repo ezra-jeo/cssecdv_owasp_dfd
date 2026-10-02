@@ -1247,7 +1247,7 @@
             "data": {
               "type": "tm.Process",
               "name": "LDAP",
-              "description": "Lightweight Directory Access Protocol=",
+              "description": "Lightweight Directory Access Protocol",
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
