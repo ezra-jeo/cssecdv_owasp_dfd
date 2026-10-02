@@ -57,6 +57,7 @@
             "shape": "trust-boundary-curve",
             "width": 200,
             "height": 100,
+            "zIndex": -1,
             "connector": "smooth",
             "data": {
               "type": "tm.Boundary",
@@ -84,13 +85,12 @@
                 "x": 922,
                 "y": 322
               }
-            ],
-            "zIndex": -1
+            ]
           },
           {
             "position": {
               "x": 72.5,
-              "y": 375
+              "y": 390
             },
             "size": {
               "width": 160,
@@ -863,7 +863,11 @@
             },
             "vertices": [
               {
-                "x": 470,
+                "x": 350,
+                "y": 425
+              },
+              {
+                "x": 490,
                 "y": 425
               }
             ]
@@ -919,7 +923,7 @@
                 "y": 510
               },
               {
-                "x": 300,
+                "x": 340,
                 "y": 510
               }
             ]
@@ -1009,12 +1013,12 @@
             },
             "vertices": [
               {
-                "x": 540,
-                "y": 480
+                "x": 490,
+                "y": 470
               },
               {
-                "x": 380,
-                "y": 480
+                "x": 350,
+                "y": 470
               }
             ]
           },
@@ -1039,6 +1043,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 16,
             "ports": {
               "groups": {
                 "top": {
@@ -1122,7 +1127,6 @@
               ]
             },
             "id": "f2dbab4b-acf3-4faa-b329-5f14fb531559",
-            "zIndex": 16,
             "data": {
               "type": "tm.Actor",
               "name": "Authentication\n/Authorization\nProvider",
@@ -1156,6 +1160,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 17,
             "ports": {
               "groups": {
                 "top": {
@@ -1252,8 +1257,7 @@
               "isWebApplication": false,
               "privilegeLevel": "",
               "threats": []
-            },
-            "zIndex": 17
+            }
           }
         ]
       }
