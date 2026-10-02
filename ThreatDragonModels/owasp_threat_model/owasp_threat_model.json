@@ -844,58 +844,6 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Privilege Verification \nRequest",
-              "description": "Verifies the Privilege",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": []
-            },
-            "labels": [
-              "Privilege Verification \nRequest"
-            ],
-            "id": "1949ee4f-7c19-459e-a7bb-70c648d7576e",
-            "source": {
-              "cell": "f2dbab4b-acf3-4faa-b329-5f14fb531559",
-              "port": "42adddca-f6c4-4abf-bb45-92c31131a881"
-            },
-            "target": {
-              "cell": "f43c1e2b-0d5a-4407-931e-fca98fc27288",
-              "port": "da81dcf0-0fd7-4ff4-bf3f-e197339dc994"
-            },
-            "vertices": [
-              {
-                "x": 870,
-                "y": 120
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
               "name": "Privilege Verification\nResult",
               "description": "Verified",
               "outOfScope": false,
@@ -927,6 +875,68 @@
                 "y": 190
               }
             ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Privilege Verification\nRequest",
+              "description": "Verifies the Privilege",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Privilege Verification\nRequest"
+            ],
+            "id": "1949ee4f-7c19-459e-a7bb-70c648d7576e",
+            "source": {
+              "cell": "f2dbab4b-acf3-4faa-b329-5f14fb531559",
+              "port": "42adddca-f6c4-4abf-bb45-92c31131a881"
+            },
+            "target": {
+              "cell": "f43c1e2b-0d5a-4407-931e-fca98fc27288",
+              "port": "da81dcf0-0fd7-4ff4-bf3f-e197339dc994"
+            },
+            "vertices": [
+              {
+                "x": 870,
+                "y": 120
+              }
+            ],
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead"
+              ],
+              "name": null
+            }
           },
           {
             "shape": "trust-boundary-curve",
