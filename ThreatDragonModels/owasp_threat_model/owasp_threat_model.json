@@ -1,11 +1,11 @@
 {
   "version": "2.6.2",
   "release_version": "",
-  "released_at": "",
+  "released_at": "2026-10-03",
   "summary": {
     "title": "owasp_threat_model",
     "owner": "Ezra Del Rosario",
-    "description": "Recreated and corrected data flow diagram for Activity 1",
+    "description": "Recreated and corrected the data flow diagram for Activity 2",
     "id": 0
   },
   "detail": {
