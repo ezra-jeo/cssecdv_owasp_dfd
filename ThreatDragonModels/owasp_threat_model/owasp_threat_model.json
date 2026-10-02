@@ -921,12 +921,6 @@
               "cell": "f43c1e2b-0d5a-4407-931e-fca98fc27288",
               "port": "da81dcf0-0fd7-4ff4-bf3f-e197339dc994"
             },
-            "vertices": [
-              {
-                "x": 870,
-                "y": 120
-              }
-            ],
             "tools": {
               "items": [
                 "boundary",
@@ -936,7 +930,13 @@
                 "target-arrowhead"
               ],
               "name": null
-            }
+            },
+            "vertices": [
+              {
+                "x": 870,
+                "y": 120
+              }
+            ]
           },
           {
             "shape": "trust-boundary-curve",
