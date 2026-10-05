@@ -5,7 +5,7 @@
   "summary": {
     "title": "owasp_threat_model",
     "owner": "Ezra Del Rosario",
-    "description": "Recreated and corrected the data flow diagram for Activity 2",
+    "description": "Recreated and corrected the data flow diagram for Activity 2. Added the threats to components in the threat model for Activity 3",
     "id": 0
   },
   "detail": {
