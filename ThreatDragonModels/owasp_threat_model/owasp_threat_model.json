@@ -1928,62 +1928,6 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Feedback\nComments",
-              "description": "Insert Feedback Comments",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": []
-            },
-            "labels": [
-              "Feedback\nComments"
-            ],
-            "id": "27a87087-6183-40f6-aa43-217e4625328a",
-            "source": {
-              "cell": "8cac763d-7274-420a-89d6-93fab1f76704",
-              "port": "de1e37b1-cf76-4109-8689-c893034d6d26"
-            },
-            "target": {
-              "cell": "401f3770-88c0-491d-addb-a71b1ec1b575",
-              "port": "da81dcf0-0fd7-4ff4-bf3f-e197339dc994"
-            },
-            "vertices": [
-              {
-                "x": 340,
-                "y": 380
-              },
-              {
-                "x": 500,
-                "y": 380
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
               "name": "Verification\nResult",
               "description": "Verified",
               "outOfScope": false,
@@ -2233,6 +2177,105 @@
                 "y": 120
               }
             ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Feedback\nComments",
+              "description": "Insert Feedback Comments",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "c2a0f624-fe5a-487a-b0c8-5c474fecf37d",
+                  "title": "Feedback Data Tampering",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Tampering",
+                  "description": "Data flowing across saved feedback comments may be tampered with by an attacker. Failure to verify that input is as expected is a root cause of a very large number of exploitable issues.",
+                  "mitigation": "Consider all paths and the way they handle data. Verify that all input is verified for correctness using an approved-list input validation approach.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 14,
+                  "score": ""
+                },
+                {
+                  "id": "160f92b7-d90e-4909-919b-13cc337bf0cd",
+                  "title": "Sensitive Feedback Data Disclosure",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Information disclosure",
+                  "description": "Data flowing across saved feedback comments may be sniffed by an attacker. Depending on what type of data an attacker can read, it may be used to attack other parts of the system or simply be a disclosure of information leading to compliance violations.",
+                  "mitigation": "Consider encrypting the data flow.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 15,
+                  "score": ""
+                }
+              ],
+              "trustBoundaryIds": [],
+              "threatFrequency": {
+                "tampering": 1,
+                "informationDisclosure": 1,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "Feedback\nComments"
+            ],
+            "id": "27a87087-6183-40f6-aa43-217e4625328a",
+            "source": {
+              "cell": "8cac763d-7274-420a-89d6-93fab1f76704",
+              "port": "de1e37b1-cf76-4109-8689-c893034d6d26"
+            },
+            "target": {
+              "cell": "401f3770-88c0-491d-addb-a71b1ec1b575",
+              "port": "da81dcf0-0fd7-4ff4-bf3f-e197339dc994"
+            },
+            "vertices": [
+              {
+                "x": 340,
+                "y": 380
+              },
+              {
+                "x": 500,
+                "y": 380
+              }
+            ],
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead"
+              ],
+              "name": null
+            }
           },
           {
             "shape": "trust-boundary-curve",
@@ -2571,6 +2614,6 @@
     ],
     "diagramTop": 3,
     "reviewer": "",
-    "threatTop": 13
+    "threatTop": 15
   }
 }
